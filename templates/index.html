@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Python Real-Time Calculator</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+<div class="app">
+  <h2 class="title">Python Real-Time Calculator</h2>
+
+  <div class="calculator">
+
+    <div class="display">
+      <div id="expression"></div>
+      <div id="result"></div>
+    </div>
+
+    <div class="keys">
+      <button class="btn danger" onclick="clearScreen()">AC</button>
+      <button class="btn" onclick="backspace()">⌫</button>
+      <button class="btn op">%</button>
+      <button class="btn op">/</button>
+
+      <button class="btn">7</button>
+      <button class="btn">8</button>
+      <button class="btn">9</button>
+      <button class="btn op">*</button>
+
+      <button class="btn">4</button>
+      <button class="btn">5</button>
+      <button class="btn">6</button>
+      <button class="btn op">-</button>
+
+      <button class="btn">1</button>
+      <button class="btn">2</button>
+      <button class="btn">3</button>
+      <button class="btn op">+</button>
+
+      <button class="btn zero">0</button>
+      <button class="btn">.</button>
+      <button class="btn equal" onclick="calculate()">=</button>
+    </div>
+
+  </div>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

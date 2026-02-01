@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Poppins",sans-serif;
+}
+
+body{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:linear-gradient(135deg,#020617,#0f172a);
+}
+
+.title{
+  color:white;
+  margin-bottom:18px;
+  letter-spacing:1px;
+}
+
+.calculator{
+  width:360px;
+  padding:18px;
+  border-radius:22px;
+  background:rgba(255,255,255,.08);
+  backdrop-filter:blur(16px);
+  border:1px solid rgba(255,255,255,.15);
+  box-shadow:0 25px 60px rgba(0,0,0,.6);
+  transition:.3s;
+}
+
+.calculator:hover{
+  transform:translateY(-4px);
+}
+
+.display{
+  height:100px;
+  margin-bottom:14px;
+  padding:12px;
+  border-radius:16px;
+  background:rgba(0,0,0,.35);
+  border:1px solid rgba(255,255,255,.2);
+  text-align:right;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+#expression{
+  color:#a5b4fc;
+  font-size:20px;
+  min-height:26px;
+}
+
+#result{
+  color:white;
+  font-size:28px;
+  font-weight:700;
+}
+
+.keys{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:10px;
+}
+
+.btn{
+  padding:14px;
+  border-radius:14px;
+  border:none;
+  cursor:pointer;
+  font-size:18px;
+  color:#e5e7eb;
+  background:linear-gradient(145deg,#020617,#0f172a);
+  border:1px solid rgba(255,255,255,.15);
+  transition:.25s;
+}
+
+.btn:hover{
+  transform:scale(1.05);
+  box-shadow:0 8px 18px rgba(0,0,0,.6);
+}
+
+.op{ color:#a5b4fc; }
+
+.equal{
+  background:linear-gradient(145deg,#4f46e5,#7c3aed);
+  font-weight:700;
+}
+
+.danger{
+  background:linear-gradient(145deg,#b91c1c,#ef4444);
+}
+
+.zero{ grid-column:span 2; }
